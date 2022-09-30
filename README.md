@@ -31,9 +31,9 @@ want to use gce ingress controller.
 
 ## The Setup
 
-`ingress` : This directory contains the common ingress and servces with `ExternalName` type (read below)
-`app1`: Everything related to the app1 (deployment, service and namespace)
-`app2`: Everything related to the app2 (deployment, service and namespace)
+- `ingress` : This directory contains the common ingress and servces with `ExternalName` type (read below)
+- `app1`: Everything related to the app1 (deployment, service and namespace)
+- `app2`: Everything related to the app2 (deployment, service and namespace)
 
 
 ## How does it work?
