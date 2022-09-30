@@ -3,6 +3,10 @@
 If you have multiple apps across different namespaces in a single kubernetes cluster, and you
 want to use a single ingress with wildcard cert for example, use this example.
 
+
+## Important Notes
+
+### The error when describing ingress
 Note: `kubectl describe ing <ingress name>` will show the following error:
 
 ```
@@ -16,6 +20,13 @@ Note: `kubectl describe ing <ingress name>` will show the following error:
 ```
 
 You can ignore this. Read [THIS](https://stackoverflow.com/a/67180704) for more context
+
+### Nginx vs GCE ingress controller
+
+This does not work with GCE ingress controller because GCE needs healthchecks on the service.
+Not sure if there is a workaround, I did not check it. Feel free to investigate further if you 
+want to use gce ingress controller.
+
 
 
 ## The Setup
