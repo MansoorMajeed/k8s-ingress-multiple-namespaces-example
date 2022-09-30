@@ -5,6 +5,9 @@ metadata:
   namespace: default
 spec:
   type: ExternalName
+  # This is where the magic happens. Make sure that the 
+  # service name, namespace name etc are accurate.
+  # This is the format: "service-name.namespace-name.svc.cluster.local"
   externalName: app2-svc.app2.svc.cluster.local
   ports:
   - port: 80
